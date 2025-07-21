@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.github.jknack</groupId>
   <artifactId>handlebars.java</artifactId>
-  <version>4.4.1-SNAPSHOT</version>
+  <version>4.4.0-lilt.1</version>
   <packaging>pom</packaging>
 
   <name>Handlebars.java</name>
@@ -47,16 +47,16 @@
   </scm>
 
   <distributionManagement>
-    <snapshotRepository>
-      <id>ossrh</id>
-      <name>Sonatype Nexus Snapshots</name>
-      <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
-    </snapshotRepository>
     <repository>
-      <id>ossrh</id>
-      <name>Nexus Release Repository</name>
-      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+      <id>lilt-nexus</id>
+      <name>Lilt Nexus Releases</name>
+      <url>https://nexus.lilt.dev/repository/releases/</url>
     </repository>
+    <snapshotRepository>
+      <id>lilt-nexus</id>
+      <name>Lilt Nexus Snapshots</name>
+      <url>https://nexus.lilt.dev/repository/snapshots/</url>
+    </snapshotRepository>
   </distributionManagement>
 
   <dependencyManagement>
@@ -64,7 +64,7 @@
       <dependency>
         <groupId>org.apache.commons</groupId>
         <artifactId>commons-lang3</artifactId>
-        <version>3.14.0</version>
+        <version>3.18.0</version>
       </dependency>
 
       <dependency>
